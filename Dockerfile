@@ -1,5 +1,8 @@
 FROM php:5.6-alpine
 
+RUN apk update \
+  && apk add git
+
 ENV COMPOSER_ALLOW_SUPERUSER 1
 ENV COMPOSER_HOME /home/composer/.composer
 
